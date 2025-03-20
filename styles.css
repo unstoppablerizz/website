@@ -1,0 +1,89 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+    background: url('https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: moveBackground 15s linear infinite;
+}
+
+/* Keyframes for moving background */
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+/* Header & Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
+}
+
+.navbar button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.navbar button:hover {
+    background-color: #666;
+}
+
+/* Main Sections */
+section {
+    padding: 60px 20px; /* Added padding to avoid navbar overlap */
+    margin-top: 50px;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+/* Header Intro */
+#intro {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Portfolio & Blog Sections */
+h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
